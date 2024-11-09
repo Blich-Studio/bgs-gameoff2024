@@ -1,10 +1,67 @@
-[gd_scene load_steps=4 format=3 uid="uid://cj6fww4aju7n0"]
+[gd_scene load_steps=24 format=3 uid="uid://cj6fww4aju7n0"]
 
 [ext_resource type="PackedScene" uid="uid://dfdgu2mgl4cdx" path="res://Scenes/Player/player.tscn" id="1_ulo88"]
+[ext_resource type="Script" path="res://Scenes/levels/DemoLevel.cs" id="1_w3brn"]
 [ext_resource type="Texture2D" uid="uid://cqopsv4p78pbc" path="res://Assets/Background/sky.png" id="2_6dpjh"]
 [ext_resource type="Texture2D" uid="uid://c2orpqyt4ihye" path="res://Assets/Background/background.png" id="2_b30kl"]
+[ext_resource type="Texture2D" uid="uid://cv01duxfvd7vn" path="res://Assets/Background/middle-buildings-neon/background1.png" id="3_btdq0"]
+[ext_resource type="Texture2D" uid="uid://cyawkxtd847f2" path="res://Assets/Background/middle-buildings-neon/background2.png" id="5_t1awm"]
+[ext_resource type="Texture2D" uid="uid://2enhbnrtqw3x" path="res://Assets/Background/middle-buildings-neon/background3.png" id="6_y55tv"]
+[ext_resource type="Texture2D" uid="uid://b5tishoymbkq0" path="res://Assets/Background/middle-buildings-neon/background4.png" id="7_3qkgg"]
+[ext_resource type="Texture2D" uid="uid://datxs0si1pgrp" path="res://Assets/Background/middle-buildings-neon/background5.png" id="8_nsqt2"]
+[ext_resource type="Texture2D" uid="uid://c3y3mlrtubtiv" path="res://Assets/Background/middle-buildings-neon/background6.png" id="9_hf3of"]
+[ext_resource type="Texture2D" uid="uid://bx148cdvnjxt8" path="res://Assets/Background/middle-buildings-neon/background7.png" id="10_jxahf"]
+[ext_resource type="Texture2D" uid="uid://nxptu26gw3uk" path="res://Assets/Background/middle-buildings-neon/background8.png" id="11_xlw3c"]
+[ext_resource type="Texture2D" uid="uid://dx2rcfxwxnrbs" path="res://Assets/Background/middle-buildings-neon/background9.png" id="12_l4rn1"]
+[ext_resource type="Texture2D" uid="uid://dom3br6j01qqc" path="res://Assets/Background/middle-buildings-neon/background10.png" id="13_um0hl"]
+[ext_resource type="Texture2D" uid="uid://c20gtnu82c21v" path="res://Assets/Background/middle-buildings-neon/background11.png" id="14_rqy1o"]
+[ext_resource type="Texture2D" uid="uid://4mcnpd27x4em" path="res://Assets/Background/middle-buildings-neon/background12.png" id="15_eqd86"]
+[ext_resource type="Texture2D" uid="uid://bvr768wrekiti" path="res://Assets/Background/middle-buildings-neon/background13.png" id="16_wo3iv"]
+[ext_resource type="Texture2D" uid="uid://bcausftw8t4kw" path="res://Assets/Background/middle-buildings-neon/background14.png" id="17_hgafs"]
+[ext_resource type="Texture2D" uid="uid://bc16uxcse7ey5" path="res://Assets/Background/middle-buildings-neon/background15.png" id="18_oess2"]
+[ext_resource type="Texture2D" uid="uid://cnee7yervfejl" path="res://Assets/Background/middle-buildings-neon/background16.png" id="19_mytim"]
 
-[node name="Node2D" type="Node2D"]
+[sub_resource type="Animation" id="Animation_rf3jv"]
+resource_name = "neon sign"
+loop_mode = 1
+step = 0.0625
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ParallaxBackground/ParallaxLayer/neon:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0625, 0.125, 0.1875, 0.25, 0.3125, 0.375, 0.4375, 0.5, 0.5625, 0.625, 0.6875, 0.75, 0.8125, 0.875, 0.9375, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("3_btdq0"), ExtResource("5_t1awm"), ExtResource("6_y55tv"), ExtResource("7_3qkgg"), ExtResource("8_nsqt2"), ExtResource("9_hf3of"), ExtResource("10_jxahf"), ExtResource("11_xlw3c"), ExtResource("12_l4rn1"), ExtResource("13_um0hl"), ExtResource("14_rqy1o"), ExtResource("15_eqd86"), ExtResource("15_eqd86"), ExtResource("16_wo3iv"), ExtResource("17_hgafs"), ExtResource("18_oess2"), ExtResource("19_mytim")]
+}
+
+[sub_resource type="Animation" id="Animation_s74oc"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ParallaxBackground/ParallaxLayer/neon:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("3_btdq0")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bnxeg"]
+_data = {
+"RESET": SubResource("Animation_s74oc"),
+"neon sign": SubResource("Animation_rf3jv")
+}
+
+[node name="Node2D" type="Node2D" node_paths=PackedStringArray("animationPlayer")]
+script = ExtResource("1_w3brn")
+animationPlayer = NodePath("AnimationPlayer")
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
@@ -23,5 +80,17 @@ motion_mirroring = Vector2(1280, 0)
 texture = ExtResource("2_b30kl")
 centered = false
 
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.4, 0.4)
+
+[node name="neon" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+texture = ExtResource("3_btdq0")
+centered = false
+
 [node name="Player" parent="." instance=ExtResource("1_ulo88")]
 position = Vector2(641, 609)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_bnxeg")
+}
