@@ -1,0 +1,168 @@
+[gd_scene load_steps=50 format=3 uid="uid://b81offcqweuoo"]
+
+[ext_resource type="Texture2D" uid="uid://ble08qkfdqhu2" path="res://Assets/Background/nightsky/nightsky1.png" id="1_gr38a"]
+[ext_resource type="Script" path="res://Scenes/levels/Intro.cs" id="1_inm3g"]
+[ext_resource type="Texture2D" uid="uid://yv1atte0wyoc" path="res://Assets/Background/rain/rain1.png" id="2_6xj2p"]
+[ext_resource type="Texture2D" uid="uid://g67b1rl8ge75" path="res://Assets/Background/police-car-middle/middle-layer1.png" id="3_acpg2"]
+[ext_resource type="Texture2D" uid="uid://by2ac3up5n2dn" path="res://Assets/Background/rain/rain2.png" id="3_o7sg3"]
+[ext_resource type="Texture2D" uid="uid://dv67msdyxguw0" path="res://Assets/Background/rain/rain3.png" id="4_4sxd6"]
+[ext_resource type="Texture2D" uid="uid://dgx2t577yt8bu" path="res://Assets/Background/rain/rain4.png" id="5_r5hsy"]
+[ext_resource type="Texture2D" uid="uid://bpfiujm8pmji8" path="res://Assets/Background/rain/rain5.png" id="6_h7jxo"]
+[ext_resource type="Texture2D" uid="uid://eya70d71snn7" path="res://Assets/Background/rain/rain6.png" id="7_2436v"]
+[ext_resource type="Texture2D" uid="uid://buqipu6nmg2j" path="res://Assets/Background/rain/rain7.png" id="8_qyhou"]
+[ext_resource type="Texture2D" uid="uid://cnkak24jyapoe" path="res://Assets/Background/rain/rain8.png" id="9_wsa52"]
+[ext_resource type="Texture2D" uid="uid://dd3vv6uggtpii" path="res://Assets/Background/rain/rain9.png" id="10_76eo8"]
+[ext_resource type="Texture2D" uid="uid://qgu3ompl18kn" path="res://Assets/Background/rain/rain10.png" id="11_ya3mw"]
+[ext_resource type="Texture2D" uid="uid://bya3vammgcjfo" path="res://Assets/Background/rain/rain11.png" id="12_avw65"]
+[ext_resource type="Texture2D" uid="uid://dxh81cu2y3whd" path="res://Assets/Background/rain/rain12.png" id="13_6w1ug"]
+[ext_resource type="Texture2D" uid="uid://dkj6x5eojgtmh" path="res://Assets/Background/rain/rain13.png" id="14_6i4fn"]
+[ext_resource type="Texture2D" uid="uid://pr8n2ge7bi0q" path="res://Assets/Background/rain/rain14.png" id="15_3vaqr"]
+[ext_resource type="Texture2D" uid="uid://b0udeh0ma2625" path="res://Assets/Background/rain/rain15.png" id="16_ucxxe"]
+[ext_resource type="Texture2D" uid="uid://nnagvmi71uft" path="res://Assets/Background/rain/rain16.png" id="17_8ksx3"]
+[ext_resource type="Texture2D" uid="uid://b8vkx3uvx5srn" path="res://Assets/Background/rain/rain17.png" id="18_pd64w"]
+[ext_resource type="Texture2D" uid="uid://cfc0d8jvjyuk1" path="res://Assets/Background/rain/rain18.png" id="19_kuua2"]
+[ext_resource type="Texture2D" uid="uid://cxq3hv7lbufb3" path="res://Assets/Background/rain/rain19.png" id="20_4vtbs"]
+[ext_resource type="Texture2D" uid="uid://bhick602ds3k6" path="res://Assets/Background/rain/rain20.png" id="21_gi4fs"]
+[ext_resource type="Texture2D" uid="uid://docyn6vpwcl7h" path="res://Assets/Background/police-car-middle/middle-layer2.png" id="23_u706q"]
+[ext_resource type="Texture2D" uid="uid://dmot8onx1iiig" path="res://Assets/Background/police-car-middle/middle-layer3.png" id="24_whcno"]
+[ext_resource type="Texture2D" uid="uid://hxp314fwfceu" path="res://Assets/Background/police-car-middle/middle-layer4.png" id="25_b4d3i"]
+[ext_resource type="Texture2D" uid="uid://cequ24vu3c3gv" path="res://Assets/Background/police-car-middle/middle-layer5.png" id="26_0eapu"]
+[ext_resource type="Texture2D" uid="uid://66i2w3elyv42" path="res://Assets/Background/police-car-middle/middle-layer6.png" id="27_biqnp"]
+[ext_resource type="Texture2D" uid="uid://cg740wi2cwftp" path="res://Assets/Background/police-car-middle/middle-layer7.png" id="28_nptrl"]
+[ext_resource type="Texture2D" uid="uid://ckpnal61syyy" path="res://Assets/Background/police-car-middle/middle-layer8.png" id="29_dp6xm"]
+[ext_resource type="Texture2D" uid="uid://cxs5xwl1qqqh2" path="res://Assets/Background/police-car-middle/middle-layer9.png" id="30_igsov"]
+[ext_resource type="Texture2D" uid="uid://cvb6cis1xeolj" path="res://Assets/Background/police-car-middle/middle-layer10.png" id="31_domr2"]
+[ext_resource type="Texture2D" uid="uid://c31g17oe41aeu" path="res://Assets/Background/police-car-middle/middle-layer11.png" id="32_7fnle"]
+[ext_resource type="Texture2D" uid="uid://bhs1t0sahlmlt" path="res://Assets/Background/police-car-middle/middle-layer12.png" id="33_wihgb"]
+[ext_resource type="Texture2D" uid="uid://1tp5nhy4mrth" path="res://Assets/Background/police-car-middle/middle-layer13.png" id="34_5ro2w"]
+[ext_resource type="Texture2D" uid="uid://dnkxa83ny21vn" path="res://Assets/Background/police-car-middle/middle-layer14.png" id="35_almon"]
+[ext_resource type="Texture2D" uid="uid://cq868x28gr7ds" path="res://Assets/Background/police-car-middle/middle-layer15.png" id="36_of2ss"]
+[ext_resource type="Texture2D" uid="uid://ba01g7diot72q" path="res://Assets/Background/police-car-middle/middle-layer16.png" id="37_cnckb"]
+[ext_resource type="Texture2D" uid="uid://dpn2fdxk5xqdc" path="res://Assets/Background/police-car-middle/middle-layer17.png" id="38_mpixn"]
+[ext_resource type="Texture2D" uid="uid://3mmf463q75i5" path="res://Assets/Background/police-car-middle/middle-layer18.png" id="39_huikj"]
+[ext_resource type="Texture2D" uid="uid://dk1w1j3qwgyq4" path="res://Assets/Background/police-car-middle/middle-layer19.png" id="40_0enb0"]
+[ext_resource type="Texture2D" uid="uid://2yyr2pebxdbx" path="res://Assets/Background/police-car-middle/middle-layer20.png" id="41_sosa5"]
+[ext_resource type="PackedScene" uid="uid://dfdgu2mgl4cdx" path="res://Scenes/Player/player.tscn" id="42_5lddy"]
+
+[sub_resource type="Animation" id="Animation_fppgq"]
+resource_name = "rain"
+loop_mode = 1
+step = 0.0526316
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ParallaxBackground/nightsky/Sprite2D2:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("2_6xj2p"), ExtResource("3_o7sg3"), ExtResource("4_4sxd6"), ExtResource("5_r5hsy"), ExtResource("6_h7jxo"), ExtResource("7_2436v"), ExtResource("8_qyhou"), ExtResource("9_wsa52"), ExtResource("10_76eo8"), ExtResource("11_ya3mw"), ExtResource("12_avw65"), ExtResource("13_6w1ug"), ExtResource("14_6i4fn"), ExtResource("15_3vaqr"), ExtResource("16_ucxxe"), ExtResource("17_8ksx3"), ExtResource("18_pd64w"), ExtResource("19_kuua2"), ExtResource("20_4vtbs"), ExtResource("21_gi4fs"), ExtResource("2_6xj2p")]
+}
+
+[sub_resource type="Animation" id="Animation_5qyua"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ParallaxBackground/nightsky/Sprite2D2:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_6xj2p")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_e3fg1"]
+_data = {
+"RESET": SubResource("Animation_5qyua"),
+"rain": SubResource("Animation_fppgq")
+}
+
+[sub_resource type="Animation" id="Animation_wriht"]
+resource_name = "blinking"
+loop_mode = 1
+step = 0.0526316
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ParallaxBackground/middleLayer/Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0526316, 0.105263, 0.157895, 0.210526, 0.263158, 0.315789, 0.368421, 0.421053, 0.473684, 0.526316, 0.578947, 0.631579, 0.684211, 0.736842, 0.789474, 0.842105, 0.894737, 0.947368, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("3_acpg2"), ExtResource("23_u706q"), ExtResource("24_whcno"), ExtResource("25_b4d3i"), ExtResource("26_0eapu"), ExtResource("27_biqnp"), ExtResource("28_nptrl"), ExtResource("29_dp6xm"), ExtResource("30_igsov"), ExtResource("31_domr2"), ExtResource("32_7fnle"), ExtResource("33_wihgb"), ExtResource("34_5ro2w"), ExtResource("35_almon"), ExtResource("36_of2ss"), ExtResource("37_cnckb"), ExtResource("38_mpixn"), ExtResource("39_huikj"), ExtResource("40_0enb0"), ExtResource("41_sosa5")]
+}
+
+[sub_resource type="Animation" id="Animation_jiil8"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ParallaxBackground/middleLayer/Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("3_acpg2")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_2n5ia"]
+_data = {
+"RESET": SubResource("Animation_jiil8"),
+"blinking": SubResource("Animation_wriht")
+}
+
+[node name="Intro" type="Node2D" node_paths=PackedStringArray("rainAnimationPlayer", "lightAnimationPlayer")]
+script = ExtResource("1_inm3g")
+rainAnimationPlayer = NodePath("Rain")
+lightAnimationPlayer = NodePath("Police")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="nightsky" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0, 0)
+
+[node name="Sky" type="Sprite2D" parent="ParallaxBackground/nightsky"]
+texture_filter = 1
+scale = Vector2(3, 3)
+texture = ExtResource("1_gr38a")
+centered = false
+
+[node name="Sprite2D2" type="Sprite2D" parent="ParallaxBackground/nightsky"]
+texture_filter = 1
+scale = Vector2(3, 3)
+texture = ExtResource("2_6xj2p")
+centered = false
+
+[node name="middleLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.3, 0.3)
+motion_mirroring = Vector2(1280, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/middleLayer"]
+texture_filter = 1
+position = Vector2(-2, 3)
+scale = Vector2(3, 3)
+texture = ExtResource("3_acpg2")
+centered = false
+
+[node name="Rain" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_e3fg1")
+}
+
+[node name="Police" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_2n5ia")
+}
+
+[node name="Player" parent="." instance=ExtResource("42_5lddy")]
+position = Vector2(28, 790)
+scale = Vector2(5, 5)
